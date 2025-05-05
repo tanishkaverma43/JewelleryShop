@@ -8,16 +8,10 @@ const cors = require("cors");
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-app.use(cors({
-  origin: ['https://jewellery-shop-frontend.vercel.app','https://jewellery-shop-admin.vercel.app/listproduct'],
-  methods: ["GET", "POST", "PUT", "PATCH", "UPDATE", "DELETE"],
-  credentials: true,
-}));
-
-
+app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://tanishkaverma43:89gnJR38dWbxuslu@cluster0.amcsipm.mongodb.net/e-commercee");
+mongoose.connect("mongodb+srv://tanishkaverma43:8mamVwkc2REjuDaM@cluster0.xjzt0jn.mongodb.net/e-commerce-new");
 
 // paste your mongoDB Connection string above with password
 // password should not contain '@' special character
